@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 하수정</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/font.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+
+    
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function(){
+            //영상편집 슬라이드
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + "</span>";
+                    },
+                },
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
+
+            //영상편집 탭메뉴
+            $('.motion_menu ul li a').click(function(e){
+                e.preventDefault(); //a링크 방지 
+            });
+            $('.motion_menu ul li').click(function(){
+                // var tabStyle = $('motion_menu ul li::before');
+                var btn = $(this).position().left;
+               
+               /*  $(this).children().before('<p></p>').animate({
+                    //'속성' : '속성값',
+                    'left' : btn
+                }, 1000); */
+
+                $('.motion_menu ul li').removeClass('on');
+                $(this).addClass('on');
+
+                $('.mySwiper').removeClass('on');
+                $('.mySwiper').eq($(this).index()).addClass('on');
+            });
+
+
+        });//jquery end
+
+    
+    </script>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1>
+                <a href="#">
+                    <img src="img/footer_logo.png" alt="하수정" />
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">영상편집</a></li>
+                    <li><a href="#">웹디자인/웹퍼블리싱</a></li>
+                    <li><a href="#">2D디자인</a></li>
+                    <li><a href="#">나의소개</a></li>
+                </ul>
+            </nav>
+        </div><!-- .inner end -->
+    </header>
+    <section class="main_visual">
+        <div class="inner">
+            <div class="title">
+                <p>JWD_D by hasujeong</p>
+                <h2>Ha Su Jeong Designer</h2>
+            </div><!-- .title end -->
+            <div class="mv_img">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=424&q=80 424w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=724&q=80 724w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=848&q=80 848w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=80 1024w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1324&q=80 1324w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1448&q=80 1448w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1624&q=80 1624w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1924&q=80 1924w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2048&q=80 2048w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2224&q=80 2224w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2524&q=80 2524w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2648&q=80 2648w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2824&q=80 2824w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3124&q=80 3124w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3248&q=80 3248w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3424&q=80 3424w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3724&q=80 3724w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3848&q=80 3848w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4024&q=80 4024w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4324&q=80 4324w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4448&q=80 4448w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4480&q=80 4480w" alt="" />
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=60 100w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=60 200w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=60 300w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60 500w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60 600w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60 700w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60 800w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60 900w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60 1000w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=60 1100w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=60 1200w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1296&q=60 1296w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=60 1400w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=60 1600w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1800&q=60 1800w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=60 2000w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=2200&q=60 2200w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=2400&q=60 2400w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=2592&q=60 2592w" alt="" />
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=424&q=80 424w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=724&q=80 724w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=848&q=80 848w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=80 1024w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1324&q=80 1324w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1448&q=80 1448w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1624&q=80 1624w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1924&q=80 1924w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2048&q=80 2048w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2224&q=80 2224w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2524&q=80 2524w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2648&q=80 2648w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2824&q=80 2824w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3124&q=80 3124w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3248&q=80 3248w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3424&q=80 3424w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3724&q=80 3724w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3848&q=80 3848w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4024&q=80 4024w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4324&q=80 4324w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4448&q=80 4448w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4480&q=80 4480w" alt="" />
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=60 100w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=60 200w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=60 300w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60 500w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60 600w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60 700w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60 800w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60 900w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60 1000w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=60 1100w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=60 1200w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1296&q=60 1296w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=60 1400w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=60 1600w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1800&q=60 1800w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=60 2000w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=2200&q=60 2200w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=2400&q=60 2400w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=2592&q=60 2592w" alt="" />
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=424&q=80 424w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=724&q=80 724w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=848&q=80 848w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=80 1024w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1324&q=80 1324w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1448&q=80 1448w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1624&q=80 1624w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1924&q=80 1924w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2048&q=80 2048w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2224&q=80 2224w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2524&q=80 2524w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2648&q=80 2648w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2824&q=80 2824w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3124&q=80 3124w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3248&q=80 3248w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3424&q=80 3424w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3724&q=80 3724w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3848&q=80 3848w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4024&q=80 4024w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4324&q=80 4324w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4448&q=80 4448w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4480&q=80 4480w" alt="" />
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=60 100w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=60 200w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=60 300w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60 500w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60 600w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60 700w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60 800w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60 900w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60 1000w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=60 1100w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=60 1200w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1296&q=60 1296w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=60 1400w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=60 1600w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1800&q=60 1800w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=60 2000w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=2200&q=60 2200w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=2400&q=60 2400w, https://images.unsplash.com/photo-1661548735649-bf1adffdba78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=2592&q=60 2592w" alt="" />
+                </div>
+            </div><!-- .mv_img end -->
+        </div><!-- .inner end -->
+    </section><!-- .main_visual end -->
+     
+    <div class="cont02_wrpa">
+    <section class="cont02">
+        <div class="title inner">
+            <h3>영상편집</h3>
+            <p>프리미어프로, 에프터이펙트 등을 사용하여 모션그래픽을 제작하였습니다.</p>
+        </div><!-- title end -->
+        <div class="motion_menu">
+            <ul>
+                <li class="on"><a href="#">게임</a></li>
+                <li><a href="#">홍보영상</a></li>
+                <li><a href="#">인포그래픽</a></li>
+                <li><a href="#">브이로그</a></li>
+                <li><a href="#">뮤비티저</a></li>
+            </ul> 
+        </div><!-- .motion_menu end -->
+        
+        <div class="swiper mySwiper on"><!-- 1 -->
+            <div class="swiper-wrapper list">
+              <div class="swiper-slide">
+                <div class="item"> 
+                <div class="pc_youtube">
+                    <img src="img/pc_img.png" alt="" />
+                    <div class="youtube">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xUIUzSCQJks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                        </div>
+                    </div><!-- .youtube end --> 
+                </div><!-- .pc_youtube end -->
+                
+                <div class="info">
+                    <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                    <h4>영상제목작성하는곳</h4>
+                    <p>구하지 얼마나 황금시대를 그들에게 부패를 뼈 천자만홍이 것은 듣는다. 
+                        사랑의 그들은 천자만홍이 있다. 꾸며 보내는 만천하의 그들의 봄바람이다. 
+                        우리 위하여서, 생생하며, 그들의 긴지라 구하지 있는가? 어디 황금시대의 
+                        위하여, 품고 황금시대를 꽃 소담스러운 이것이다.
+                    </p>
+                    <ul class="text">
+                        <li><strong>프로그램</strong> : 프리미어프로, 에프터이펙트, 마야, 포토샵, 일러스트</li>
+                        <li><strong>제작일자</strong> : 2022.08.09</li>
+                    </ul><!-- .text end -->
+                    <ul class="btn">
+                        <li><a href="#">영상원본보기</a></li>
+                        <li><a href="#">기획서보기</a></li>
+                    </ul><!-- .btn end -->
+                </div><!-- .info end -->
+                </div><!-- .item 1 end -->
+              </div>
+              <div class="swiper-slide">
+                <div class="item"> 
+                    <div class="pc_youtube">
+                        <img src="img/pc_img.png" alt="" />
+                        <div class="youtube">
+                            <div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/xUIUzSCQJks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                            </div>
+                        </div><!-- .youtube end --> 
+                    </div><!-- .pc_youtube end -->
+                    
+                    <div class="info">
+                        <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                        <h4>영상제목작성하는곳</h4>
+                        <p>구하지 얼마나 황금시대를 그들에게 부패를 뼈 천자만홍이 것은 듣는다. 
+                            사랑의 그들은 천자만홍이 있다. 꾸며 보내는 만천하의 그들의 봄바람이다. 
+                            우리 위하여서, 생생하며, 그들의 긴지라 구하지 있는가? 어디 황금시대의 
+                            위하여, 품고 황금시대를 꽃 소담스러운 이것이다.
+                        </p>
+                        <ul class="text">
+                            <li><strong>프로그램</strong> : 프리미어프로, 에프터이펙트, 마야, 포토샵, 일러스트</li>
+                            <li><strong>제작일자</strong> : 2022.08.09</li>
+                        </ul><!-- .text end -->
+                        <ul class="btn">
+                            <li><a href="#">영상원본보기</a></li>
+                            <li><a href="#">기획서보기</a></li>
+                        </ul><!-- .btn end -->
+                    </div><!-- .info end -->
+                    </div><!-- .item 1 end -->
+              </div>  
+            </div>  
+            <div class="swiper_btn">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div><!-- 1 -->
+
+        <div class="swiper mySwiper"><!-- 2 -->
+            <div class="swiper-wrapper list">
+              <div class="swiper-slide">
+                <div class="item"> 
+                <div class="pc_youtube">
+                    <img src="img/pc_img.png" alt="" />
+                    <div class="youtube">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xUIUzSCQJks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                        </div>
+                    </div><!-- .youtube end --> 
+                </div><!-- .pc_youtube end -->
+                
+                <div class="info">
+                    <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                    <h4>영상제목작성하는곳</h4>
+                    <p>구하지 얼마나 황금시대를 그들에게 부패를 뼈 천자만홍이 것은 듣는다. 
+                        사랑의 그들은 천자만홍이 있다. 꾸며 보내는 만천하의 그들의 봄바람이다. 
+                        우리 위하여서, 생생하며, 그들의 긴지라 구하지 있는가? 어디 황금시대의 
+                        위하여, 품고 황금시대를 꽃 소담스러운 이것이다.
+                    </p>
+                    <ul class="text">
+                        <li><strong>프로그램</strong> : 프리미어프로, 에프터이펙트, 마야, 포토샵, 일러스트</li>
+                        <li><strong>제작일자</strong> : 2022.08.09</li>
+                    </ul><!-- .text end -->
+                    <ul class="btn">
+                        <li><a href="#">영상원본보기</a></li>
+                        <li><a href="#">기획서보기</a></li>
+                    </ul><!-- .btn end -->
+                </div><!-- .info end -->
+                </div><!-- .item 1 end -->
+              </div>
+              <div class="swiper-slide">
+                <div class="item"> 
+                    <div class="pc_youtube">
+                        <img src="img/pc_img.png" alt="" />
+                        <div class="youtube">
+                            <div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/xUIUzSCQJks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                            </div>
+                        </div><!-- .youtube end --> 
+                    </div><!-- .pc_youtube end -->
+                    
+                    <div class="info">
+                        <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                        <h4>영상제목작성하는곳</h4>
+                        <p>구하지 얼마나 황금시대를 그들에게 부패를 뼈 천자만홍이 것은 듣는다. 
+                            사랑의 그들은 천자만홍이 있다. 꾸며 보내는 만천하의 그들의 봄바람이다. 
+                            우리 위하여서, 생생하며, 그들의 긴지라 구하지 있는가? 어디 황금시대의 
+                            위하여, 품고 황금시대를 꽃 소담스러운 이것이다.
+                        </p>
+                        <ul class="text">
+                            <li><strong>프로그램</strong> : 프리미어프로, 에프터이펙트, 마야, 포토샵, 일러스트</li>
+                            <li><strong>제작일자</strong> : 2022.08.09</li>
+                        </ul><!-- .text end -->
+                        <ul class="btn">
+                            <li><a href="#">영상원본보기</a></li>
+                            <li><a href="#">기획서보기</a></li>
+                        </ul><!-- .btn end -->
+                    </div><!-- .info end -->
+                    </div><!-- .item 1 end -->
+              </div>  
+            </div>  
+            <div class="swiper_btn">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div><!-- 2 -->
+    </section>
+    </div><!-- .cont02_wrap -->
+    
+   
+
+   
+<div class="cont03_wrap">
+    <section class="cont03">
+        <div class="title">
+            <h3>웹디자인</h3>
+            <p>접근성, 호환성을 고려한 웹사이트 디자인을 리뉴얼 하였습니다.</p>
+        </div><!-- .title end -->
+       <!--  <ul class="tab_menu">
+            <li>프로젝트명1</li>
+            <li>프로젝트명2</li>
+        </ul> --><!-- .tab_menu end -->
+        <div class="list">
+            <div class="item"><!-- 1 -->
+                <figure>
+                    <img src="img/visual.jpg" alt="" />
+                </figure>
+                <div class="info">
+                    <h4>이름 웹사이트 리뉴얼</h4>
+                    <p>이름 웹사이트 리뉴얼을 위해 기획, 디자인하고, HTML, CSS언어를 활용하여 웹사이트를 구현하였습니다.</p>
+                    <ul class="text">
+                        <li><strong>프로그램</strong> : 포토샵, 일러스트, VScode</li>
+                        <li><strong>사용언어</strong> : html, css</li>
+                        <li><strong>제작일자</strong> : 2022.08</li>
+                    </ul><!-- .text end -->
+                    <ul class="btn">
+                        <li><a href="#">기획서및작업과정</a></li>
+                        <li><a href="#">사이트보기</a></li>
+                    </ul><!-- .btn end -->
+                </div><!-- .info end -->
+                
+            </div><!-- .item end 1 -->
+            
+            <div class="item"><!-- 2 -->
+                <figure>
+                    <img src="img/visual2.jpg" alt="" />
+                </figure>
+                <div class="info">
+                    <h4>이름 웹사이트 리뉴얼</h4>
+                    <p>이름 웹사이트 리뉴얼을 위해 기획, 디자인하고, HTML, CSS언어를 활용하여 웹사이트를 구현하였습니다.</p>
+                    <ul class="text">
+                        <li><strong>프로그램</strong> : 포토샵, 일러스트, VScode</li>
+                        <li><strong>사용언어</strong> : html, css</li>
+                        <li><strong>제작일자</strong> : 2022.08</li>
+                    </ul><!-- .text end -->
+                    <ul class="btn">
+                        <li><a href="#">기획서및작업과정</a></li>
+                        <li><a href="#">사이트보기</a></li>
+                    </ul><!-- .btn end -->
+                </div><!-- .info end -->
+                
+            </div><!-- .item end 2 -->
+            <div class="item"><!-- 2 -->
+                <figure>
+                    <img src="img/visual2.jpg" alt="" />
+                </figure>
+                <div class="info">
+                    <h4>이름 웹사이트 리뉴얼</h4>
+                    <p>이름 웹사이트 리뉴얼을 위해 기획, 디자인하고, HTML, CSS언어를 활용하여 웹사이트를 구현하였습니다.</p>
+                    <ul class="text">
+                        <li><strong>프로그램</strong> : 포토샵, 일러스트, VScode</li>
+                        <li><strong>사용언어</strong> : html, css</li>
+                        <li><strong>제작일자</strong> : 2022.08</li>
+                    </ul><!-- .text end -->
+                    <ul class="btn">
+                        <li><a href="#">기획서및작업과정</a></li>
+                        <li><a href="#">사이트보기</a></li>
+                    </ul><!-- .btn end -->
+                </div><!-- .info end -->
+                
+            </div><!-- .item end 2 -->
+             
+        </div><!-- .list end -->
+    </section><!-- .cont03 end -->
+</div><!-- .cont03_wrap -->
+
+<div class="cont04_wrap">
+    <section class="cont04">
+        <div class="title">
+            <h3>그래픽디자인</h3>
+            <p>2D, 3D그래픽을 포토샵, 일러스트를 이용하여 디자인을 제작하였습니다.</p>
+        </div><!-- .title end -->
+
+        <div class="list">
+            <a href="img/book_02.jpg" data-fancybox="images">
+                <img src="img/book_02.jpg" alt="" />
+                <div class="info">
+                    <h4>그래픽디자인 제목</h4>
+                    <p>사용한 프로그램</p>
+                </div><!-- .info end -->
+            </a>
+            <a href="#"  data-fancybox="images">
+                <img src="img/visual2.jpg" alt="" />
+                <div class="info">
+                    <h4>그래픽디자인 제목</h4>
+                    <p>사용한 프로그램</p>
+                </div><!-- .info end -->
+            </a>
+            <a href="#"  data-fancybox="images">
+                <img src="https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=424&q=80 424w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=724&q=80 724w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=848&q=80 848w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=80 1024w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1324&q=80 1324w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1448&q=80 1448w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1624&q=80 1624w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1924&q=80 1924w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2048&q=80 2048w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2224&q=80 2224w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2524&q=80 2524w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2648&q=80 2648w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2824&q=80 2824w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3124&q=80 3124w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3248&q=80 3248w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3424&q=80 3424w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3724&q=80 3724w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3848&q=80 3848w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4024&q=80 4024w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4324&q=80 4324w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4448&q=80 4448w, https://images.unsplash.com/photo-1661547094934-9481fa851b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4480&q=80 4480w" alt="" />
+                <div class="info">
+                    <h4>그래픽디자인 제목</h4>
+                    <p>사용한 프로그램</p>
+                </div><!-- .info end -->
+            </a>
+            <a href="#"  data-fancybox="images">
+                <img src="img/book_02.jpg" alt="" />
+                <div class="info">
+                    <h4>그래픽디자인 제목</h4>
+                    <p>사용한 프로그램</p>
+                </div><!-- .info end -->
+            </a>
+            <a href="#"  data-fancybox="images">
+                <img src="img/book_02.jpg" alt="" />
+                <div class="info">
+                    <h4>그래픽디자인 제목</h4>
+                    <p>사용한 프로그램</p>
+                </div><!-- .info end -->
+            </a>
+        </div><!-- .list end -->
+    </section><!-- .cont 04 end-->
+    
+</div><!-- .cont04_wrap end -->
+
+<div class="cont05_wrap">
+    <section class="cont05">
+        <div class="title">
+            <h3>나의 소개</h3>
+        </div><!-- .title end -->
+        
+        <div class="info">
+            <div class="img05">
+                <img src="img/main_bg.jpg" alt="" />
+            </div>
+            <div class="text">
+                <ul>
+                    <li><strong>이름</strong></li>
+                    <li>하수정</li>
+                </ul>
+                <ul>
+                    <li><strong>연락처</strong></li>
+                    <li>010-8563-7815</li>
+                </ul>
+                <ul>
+                    <li><strong>생년월일</strong></li>
+                    <li>0000.00.00</li>
+                </ul>
+                
+                <ul>
+                    <li><strong>카카오톡아이디</strong></li>
+                    <li>shines2268</li>
+                     
+                </ul>
+                <ul>
+                    <li><strong>경력</strong></li>
+                    <li>어디에서 무엇을 하였니? 얼마동안 경력을 쌓았니?</li>
+                </ul>
+
+                <ul class="list">
+                    <li>#웹제작</li>
+                    <li class="v">#영상편집</li>
+                    <li>#html</li>
+                    <li>#css</li>
+                    <li>#jquery</li>
+                    <li class="v">#프리미어프로</li>
+                    <li class="v">#에프터이펙트</li>
+                    <li class="v">#마야</li>
+                    <li class="v">#4D</li> 
+                </ul>
+            </div>
+            
+        </div><!-- .info end -->
+    </section><!-- .cont05 end -->
+
+</div><!-- . cont05_wrap end-->
+
+<footer>
+    <ul>
+        <li><a href="#">유튜브채널 이동</a></li>
+        <li><a href="#">지원서 다운로드</a></li>
+    </ul>
+    <p>COPYRIGHT 2022. 디자이너 하수정. ALL RIGHTS RESERVED.</p>
+    <p>본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.<br />
+        사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다.</p>
+
+</footer>
+
+</body>
+</html>
